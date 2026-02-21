@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>زياد - ملهم</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background: #007bff; color: white; padding: 1rem; text-align: center; }
+        nav { margin: 15px 0; }
+        nav a { margin: 0 15px; text-decoration: none; color: #007bff; }
+        .content { padding: 20px; }
+        .notes-section { margin-top: 20px; } 
+        .financial-engine-diagram { text-align: center; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>زياد - ملهم</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Financial Engines</a>
+            <a href="#">Decision Cards</a>
+            <a href="#">Export Options</a>
+        </nav>
+    </header>
+    <div class="content">
+        <h2>Financial Engines Diagram</h2>
+        <div class="financial-engine-diagram">
+            <img src="path/to/diagram.png" alt="Financial Engines Diagram">
+            <p>Description of the diagram goes here.</p>
+        </div>
+        <h2>Decision Cards</h2>
+        
+        <!-- Example decision cards -->
+        <div class="decision-cards">
+            <div class="card">
+                <h3>Decision Card 1</h3>
+                <p>Description of Decision Card 1.</p>
+            </div>
+            <div class="card">
+                <h3>Decision Card 2</h3>
+                <p>Description of Decision Card 2.</p>
+            </div>
+        </div>
+        <div class="notes-section">
+            <h2>Notes Section</h2>
+            <textarea id="notes" rows="4" cols="50" placeholder="Write your notes here..."></textarea><br>
+            <button onclick="sendWhatsApp()">Send via WhatsApp</button>
+        </div>
+    </div>
+    <script>
+        function sendWhatsApp() {
+            const notes = document.getElementById('notes').value;
+            const phoneNumber = '15715160160';
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(notes)}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>

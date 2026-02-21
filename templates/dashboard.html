@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            color: #fff;
+            text-align: center;
+        }
+        .alert {
+            background-color: #ffcccc;
+            color: #c0292e;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .statistics {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .stat {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 5px;
+            color: #fff;
+            flex: 1;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>لوحة التحكم</h1>
+        <div class="alert">تنبيه: تأكد من تحديث الإحصائيات بشكل منتظم!</div>
+        <div class="card">
+            <h2><i class="fas fa-users"></i> الأعضاء</h2>
+            <p>عدد الأعضاء: 150</p>
+        </div>
+        <div class="card">
+            <h2><i class="fas fa-chart-line"></i> الإحصائيات</h2>
+            <p>نسبة الزيادة: 20%</p>
+        </div>
+        <div class="statistics">
+            <div class="stat">
+                <h3>إحصائية 1</h3>
+                <p>100</p>
+            </div>
+            <div class="stat">
+                <h3>إحصائية 2</h3>
+                <p>200</p>
+            </div>
+            <div class="stat">
+                <h3>إحصائية 3</h3>
+                <p>300</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
